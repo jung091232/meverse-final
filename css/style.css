@@ -1487,3 +1487,21 @@ h1, p, .nav-bar ul li a, .speech-bubble {
   z-index: -1 !important;
   pointer-events: none !important;
 }
+
+
+#particles-js {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100vh !important;
+  z-index: -1 !important;
+  pointer-events: none !important;
+}
+
+.hero-section {
+  position: relative !important;
+  z-index: 1 !important;
+  min-height: 100vh !important;
+  padding-top: 60px !important;
+}
