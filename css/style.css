@@ -1505,3 +1505,51 @@ h1, p, .nav-bar ul li a, .speech-bubble {
     display: block !important;
   }
 }
+
+
+
+/* === 모바일 스와이프 메뉴 강제 스타일 적용 === */
+@media (max-width: 768px) {
+  .mobile-nav-wrapper {
+    height: 50px !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    background-color: #000 !important;
+    overflow: hidden !important;
+  }
+
+  .scrolling-menu {
+    height: 50px !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    white-space: nowrap !important;
+    -webkit-overflow-scrolling: touch !important;
+    display: flex !important;
+    align-items: center !important;
+    scrollbar-width: none !important;
+  }
+
+  .scrolling-menu::-webkit-scrollbar {
+    display: none !important;
+  }
+
+  .scrolling-menu ul {
+    display: flex !important;
+    padding: 0 10px !important;
+    margin: 0 !important;
+    gap: 18px !important;
+    list-style: none !important;
+  }
+
+  .scrolling-menu li {
+    flex: 0 0 auto !important;
+  }
+
+  .scrolling-menu a {
+    display: inline-block !important;
+    padding: 10px 8px !important;
+    font-size: 14px !important;
+    color: white !important;
+    text-decoration: none !important;
+  }
+}
