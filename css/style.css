@@ -1356,3 +1356,26 @@ h1, p, .nav-bar ul li a, .speech-bubble {
     white-space: nowrap;
   }
 }
+
+@media (max-width: 768px) {
+  .nav-bar ul {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    white-space: nowrap;
+    gap: 40px;
+    padding: 20px 10px;
+    justify-content: flex-start;
+  }
+
+  .nav-bar ul li {
+    display: inline-block;
+  }
+
+  .nav-bar ul li a {
+    font-size: 100px !important;
+    color: #00ffff !important;
+    font-weight: bold !important;
+    white-space: nowrap;
+  }
+}
