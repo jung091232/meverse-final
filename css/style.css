@@ -1608,3 +1608,47 @@ header {
     text-decoration: none !important;
   }
 }
+
+
+@media (max-width: 768px) {
+  .mobile-only {
+    display: block !important;
+  }
+
+  .hero-section {
+    padding-top: 160px !important;
+  }
+
+  .scrolling-menu {
+    overflow-x: auto !important;
+    white-space: nowrap !important;
+    -webkit-overflow-scrolling: touch !important;
+    display: block !important;
+    scrollbar-width: none;
+    height: 60px;
+  }
+
+  .scrolling-menu::-webkit-scrollbar {
+    display: none !important;
+  }
+
+  .scrolling-menu ul {
+    display: flex !important;
+    gap: 16px !important;
+    padding: 0 12px !important;
+    margin: 0 !important;
+    list-style: none !important;
+  }
+
+  .scrolling-menu li {
+    flex: 0 0 auto !important;
+  }
+
+  .scrolling-menu a {
+    display: inline-block !important;
+    padding: 14px 10px !important;
+    font-size: 14px !important;
+    color: white !important;
+    text-decoration: none !important;
+  }
+}
