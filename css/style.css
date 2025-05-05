@@ -24,10 +24,7 @@ header {
   color: #fff700;
 }
 
-.hero-section {
-  display: flex; justify-content: center; align-items: center; height: 100vh;
-  padding: 100px 20px; gap: 60px; position: relative; z-index: 1;
-}
+
 
 .hero-content {
   max-width: 50%;
@@ -58,68 +55,23 @@ header {
   background-color: transparent; color: #fff; border: 2px solid #fff;
 }
 
-.hero-image {
-  position: relative;
-  position: relative; text-align: center;
-}
 
-.hero-image img {
-  position: relative;
-  max-width: 300px; height: auto;
-}
 
-.speech-bubble {
-  left: 420px;
-  transform: translateY(-50%);
-  background-color: rgba(255,255,255,0.1); padding: 12px 16px;
-  border-radius: 12px; font-size: 16px; color: #fff; max-width: 200px;
-}
+
+
+
 
 body, html { color: #fff; }
 
 /* Neon text 효과 적용 */
-h1, p, .nav-bar ul li a, .speech-bubble {
-  text-shadow:
-    0 0 5px #00ffc3,
-    0 0 10px #00ffc3,
-    0 0 20px #00ffc3,
-    0 0 40px #00ffc3;
-}
+h1, p, .nav-bar ul li a, 
 
 /* 말풍선 꼬리 명확히 추가 */
-.speech-bubble {
-  left: 420px;
-  transform: translateY(-50%);
-  background-color: rgba(255, 255, 255, 0.1);
-  color: #00ffc3;
-  padding: 12px 16px;
-  border-radius: 12px; font-size: 16px; font-weight: bold;
-  max-width: 220px;
-  box-shadow: 0 0 10px rgba(0, 255, 195, 0.7);
-  z-index: 2;
-}
 
-.speech-bubble::after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  right: 100%;
-  top: 50%;
-  border-width: 10px;
-  border-style: solid;
-  border-color: transparent rgba(255,255,255,0.1) transparent transparent;
-}
 
-.hero-section {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  padding: 100px 20px;
-  gap: 60px;
-  z-index: 1;
-}
+
+
+
 
 .hero-content {
   max-width: 50%;
@@ -153,119 +105,29 @@ h1, p, .nav-bar ul li a, .speech-bubble {
   background-color: transparent; color: #fff; border: 2px solid #fff;
 }
 
-.hero-image {
-  position: relative;
-  position: relative;
-  text-align: center;
-}
 
-.hero-image img {
-  position: relative;
-  width: auto;
-  height: 1000px; /* 캐릭터 극대화하여 텍스트 영역보다 크게 */
-  object-fit: contain;
-}
 
-.speech-bubble {
-  left: 420px;
-  transform: translateY(-50%);
-  background-color: #ffffff;
-  color: #000000;
-  padding: 12px 16px;
-  border-radius: 15px;
-  font-size: 16px;
-  font-weight: bold;
-  max-width: 220px;
-  box-shadow: 0 0 15px rgba(0, 255, 195, 0.8);
-  z-index: 2;
-  text-align: center;
-}
 
-.speech-bubble::after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  right: 100%;
-  top: 50%;
-  border-width: 8px;
-  border-style: solid;
-  border-color: transparent #ffffff transparent transparent;
-}
 
-.hero-image {
-  position: relative;
-  position: relative;
-  text-align: center;
-  overflow: visible; /* 이미지 크기 제한 명확히 제거 */
-  width: auto;
-  height: auto;
-}
 
-.hero-image img {
-  position: relative;
-  width: auto;
-  height: 1000px; /* 캐릭터 사이즈 극대화 */
-  max-width: none !important; /* 이미지 최대 너비 제한 제거 */
-}
 
-.hero-section {
-  gap: 20px; /* 캐릭터와 텍스트 사이 간격 명확히 좁힘 */
-}
 
-.speech-bubble {
-  position: absolute;
-  left: 420px;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: #ffffff;
-  color: #000000;
-  padding: 12px 16px;
-  border-radius: 15px;
-  font-size: 16px;
-  font-weight: bold;
-  max-width: 220px;
-  box-shadow: 0 0 15px rgba(0, 255, 195, 0.8);
-  z-index: 2;
-  text-align: center;
-  white-space: nowrap; /* 텍스트 2줄로 명확히 정렬 방지 */
-}
 
-.speech-bubble span {
-  display: block; /* 2줄 가로 정렬 명확히 적용 */
-}
 
-.speech-bubble {
-  position: absolute;
-  left: 420px;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: #ffffff;
-  color: #000000;
-  padding: 16px 20px;
-  border-radius: 15px;
-  font-size: 20px; /* 텍스트 사이즈 명확히 확대 */
-  font-weight: bold;
-  max-width: 260px;
-  box-shadow: 0 0 15px rgba(0, 255, 195, 0.8);
-  z-index: 2;
-  text-align: center;
-  white-space: nowrap;
-}
 
-.speech-bubble::after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  right: 100%;
-  top: 50%;
-  border-width: 8px;
-  border-style: solid;
-  border-color: transparent #ffffff transparent transparent;
-}
 
-.speech-bubble span {
-  display: block;
-}
+
+
+
+
+
+
+
+
+
+
+
+
 
 .feature-section-new {
   display: flex;
@@ -490,34 +352,9 @@ h1, p, .nav-bar ul li a, .speech-bubble {
 
 
 /* Tokenomics 캐릭터 말풍선 */
-.speech-bubble-tokenomics {
-  position: absolute;
-  top: 50%;
-  left: 420px;
-  transform: translateY(-50%);
-  background-color: #ffffff;
-  color: #000000;
-  padding: 12px 16px;
-  border-radius: 15px;
-  font-size: 18px;
-  font-weight: bold;
-  max-width: 220px;
-  box-shadow: 0 0 15px rgba(0, 255, 195, 0.8);
-  text-align: center;
-  white-space: nowrap;
-  z-index: 2;
-}
 
-.speech-bubble-tokenomics::after {
-  content: '';
-  position: absolute;
-  bottom: -8px;
-  left: 420px;
-  transform: translateY(-50%);
-  border-width: 8px;
-  border-style: solid;
-  border-color: #ffffff transparent transparent transparent;
-}
+
+
 
 /* Tokenomics 이미지 포지션 상대 설정 */
 .tokenomics-image {
@@ -532,64 +369,14 @@ h1, p, .nav-bar ul li a, .speech-bubble {
 
 
 /* Tokenomics 캐릭터 말풍선 (정밀조정) */
-.speech-bubble-tokenomics {
-  position: absolute;
-  top: 50%;
-  left: 420px;
-  transform: translateY(-50%);
-  background-color: #ffffff;
-  color: #000000;
-  padding: 12px 16px;
-  border-radius: 15px;
-  font-size: 18px;
-  font-weight: bold;
-  max-width: 220px;
-  box-shadow: 0 0 15px rgba(0, 255, 195, 0.8);
-  text-align: center;
-  white-space: nowrap;
-  z-index: 2;
-}
 
-.speech-bubble-tokenomics::after {
-  content: '';
-  position: absolute;
-  bottom: -8px;
-  left: 420px;
-  transform: translateY(-50%);
-  border-width: 8px;
-  border-style: solid;
-  border-color: #ffffff transparent transparent transparent;
-}
+
+
 
 /* Roadmap 캐릭터 말풍선 (정밀조정) */
-.speech-bubble-roadmap {
-  position: absolute;
-  top: 50%;
-  left: 420px;
-  transform: translateY(-50%);
-  background-color: #ffffff;
-  color: #000000;
-  padding: 12px 16px;
-  border-radius: 15px;
-  font-size: 18px;
-  font-weight: bold;
-  max-width: 220px;
-  box-shadow: 0 0 15px rgba(0, 255, 195, 0.8);
-  text-align: center;
-  white-space: nowrap;
-  z-index: 2;
-}
 
-.speech-bubble-roadmap::after {
-  content: '';
-  position: absolute;
-  bottom: -8px;
-  left: 420px;
-  transform: translateY(-50%);
-  border-width: 8px;
-  border-style: solid;
-  border-color: #ffffff transparent transparent transparent;
-}
+
+
 
 /* Tokenomics/ Roadmap 이미지 포지션 상대 설정 */
 .tokenomics-image, .roadmap-image {
@@ -604,64 +391,14 @@ h1, p, .nav-bar ul li a, .speech-bubble {
 
 
 /* Tokenomics 캐릭터 말풍선 (최종 자연스럽게) */
-.speech-bubble-tokenomics {
-  position: absolute;
-  top: 50%;
-  left: 420px;
-  transform: translateY(-50%);
-  background-color: #ffffff;
-  color: #000000;
-  padding: 14px 20px;
-  border-radius: 15px;
-  font-size: 18px;
-  font-weight: bold;
-  max-width: 240px;
-  box-shadow: 0 0 20px rgba(0, 255, 195, 0.8);
-  text-align: center;
-  white-space: nowrap;
-  z-index: 2;
-}
 
-.speech-bubble-tokenomics::after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 420px;
-  transform: translateY(-50%);
-  border-width: 10px;
-  border-style: solid;
-  border-color: transparent #ffffff transparent transparent;
-}
+
+
 
 /* Roadmap 캐릭터 말풍선 (최종 자연스럽게) */
-.speech-bubble-roadmap {
-  position: absolute;
-  top: 50%;
-  right: 110%;
-  transform: translateY(-50%);
-  background-color: #ffffff;
-  color: #000000;
-  padding: 14px 20px;
-  border-radius: 15px;
-  font-size: 18px;
-  font-weight: bold;
-  max-width: 240px;
-  box-shadow: 0 0 20px rgba(0, 255, 195, 0.8);
-  text-align: center;
-  white-space: nowrap;
-  z-index: 2;
-}
 
-.speech-bubble-roadmap::after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  right: 0;
-  transform: translateY(-50%);
-  border-width: 10px;
-  border-style: solid;
-  border-color: transparent transparent transparent #ffffff;
-}
+
+
 
 /* Tokenomics/ Roadmap 이미지 포지션 상대 설정 */
 .tokenomics-image, .roadmap-image {
@@ -704,37 +441,9 @@ h1, p, .nav-bar ul li a, .speech-bubble {
   height: auto;
 }
 
-.speech-bubble-roadmap {
-  top: 50%;
-  left: 420px;
-  transform: translateY(-50%);
-  position: absolute;
-  top: 50%;
-  left: 420px;
-  transform: translateY(-50%);
-  background-color: #ffffff;
-  color: #000000;
-  padding: 12px 16px;
-  border-radius: 15px;
-  font-size: 18px;
-  font-weight: bold;
-  max-width: 220px;
-  box-shadow: 0 0 15px rgba(0, 255, 195, 0.8);
-  text-align: center;
-  white-space: nowrap;
-  z-index: 2;
-}
 
-.speech-bubble-roadmap::after {
-  content: '';
-  position: absolute;
-  bottom: -8px;
-  left: 420px;
-  transform: translateY(-50%);
-  border-width: 8px;
-  border-style: solid;
-  border-color: #ffffff transparent transparent transparent;
-}
+
+
 
 .roadmap-text {
   flex: 1;
@@ -838,109 +547,42 @@ h1, p, .nav-bar ul li a, .speech-bubble {
 
 
 /* Exchange Section */
-.exchange-section {
-  padding: 80px 20px;
-  background: transparent;
-  text-align: center;
-}
 
-.exchange-section h2 {
-  font-size: 36px;
-  color: #00ffc3;
-  margin-bottom: 40px;
-  text-shadow: 0 0 10px #00ffc3;
-}
 
-.exchange-swiper .swiper-slide {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
-.exchange-swiper img {
-  width: 120px;
-  height: auto;
-  opacity: 0.8;
-  transition: transform 0.3s;
-}
 
-.exchange-swiper img:hover {
-  transform: scale(1.1);
-  opacity: 1;
-}
+
+
+
+
+
 
 
 /* Exchange Section */
-.exchange-section {
-  padding: 80px 20px;
-  background: transparent;
-  text-align: center;
-}
 
-.exchange-section h2 {
-  font-size: 36px;
-  color: #00ffc3;
-  margin-bottom: 40px;
-  text-shadow: 0 0 10px #00ffc3;
-}
 
-.exchange-swiper .swiper-slide {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
-.exchange-swiper img {
-  width: 120px;
-  height: auto;
-  opacity: 0.8;
-  transition: transform 0.3s;
-}
 
-.exchange-swiper img:hover {
-  transform: scale(1.1);
-  opacity: 1;
-}
+
+
+
+
+
 
 
 /* Exchange Section */
-.exchange-section {
-  padding: 80px 20px;
-  background: transparent;
-  text-align: center;
-}
 
-.exchange-section h2 {
-  font-size: 36px;
-  color: #00ffc3;
-  margin-bottom: 40px;
-  text-shadow: 0 0 10px #00ffc3;
-}
 
-.exchange-swiper .swiper-slide {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
-.exchange-swiper img {
-  width: 120px;
-  height: auto;
-  opacity: 0.8;
-  transition: transform 0.3s;
-}
 
-.exchange-swiper img:hover {
-  transform: scale(1.1);
-  opacity: 1;
-}
+
+
+
+
+
 
 /* Exchange Section */
-.exchange-section {
-    background-color: #121212;
-    padding: 60px 20px;
-    text-align: center;
-}
+
 
 .exchange-section .section-title {
     color: #fff;
@@ -970,11 +612,7 @@ h1, p, .nav-bar ul li a, .speech-bubble {
 }
 
 /* Exchange Section */
-.exchange-section {
-    background-color: #121212;
-    padding: 60px 20px;
-    text-align: center;
-}
+
 
 .exchange-section .section-title {
     color: #fff;
@@ -1004,11 +642,7 @@ h1, p, .nav-bar ul li a, .speech-bubble {
 }
 
 /* Exchange Section */
-.exchange-section {
-    background-color: #121212;
-    padding: 60px 20px;
-    text-align: center;
-}
+
 
 .exchange-section .section-title {
     color: #fff;
@@ -1044,58 +678,23 @@ h1, p, .nav-bar ul li a, .speech-bubble {
 
 
 /* Fix oversized image by using natural image size */
-.hero-image img {
-  position: relative;
-    width: auto;
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-}
+
 
 
 /* Slightly reduce hero image size */
-.hero-image img {
-  position: relative;
-    width: auto;
-    max-width: 85%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-}
+
 
 
 /* Further reduce hero image size to 75% */
-.hero-image img {
-  position: relative;
-    width: auto;
-    max-width: 75%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-}
+
 
 
 /* Final reduce hero image size to 60% */
-.hero-image img {
-  position: relative;
-    width: auto;
-    max-width: 60%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-}
+
 
 
 /* Rebuild Hero Section Flex Ratio */
-.hero-section {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 80px 20px;
-    gap: 20px;
-}
+
 
 .hero-text {
     flex: 0 0 40%;
@@ -1118,35 +717,15 @@ h1, p, .nav-bar ul li a, .speech-bubble {
     margin-top: 20px;
 }
 
-.hero-image {
-  position: relative;
-    flex: 0 0 30%;
-    text-align: center;
-}
 
-.hero-image img {
-  position: relative;
-    width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-}
+
+
 
 
 /* Expand Hero Image to 40% */
-.hero-image {
-  position: relative;
-    flex: 0 0 40%;
-    text-align: center;
-}
 
-.hero-image img {
-  position: relative;
-    width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-}
+
+
 
 
 /* Uniform padding for all major sections */
@@ -1161,9 +740,7 @@ h1, p, .nav-bar ul li a, .speech-bubble {
 
 
 /* Tighten Hero to next section spacing */
-.hero-section {
-    padding-bottom: 40px;
-}
+
 
 .flow-full-section {
     padding-top: 20px;
@@ -1282,158 +859,105 @@ h1, p, .nav-bar ul li a, .speech-bubble {
 
 
 
-  .mobile-menu-scroll::-webkit-scrollbar {
-    display: none;
-  }
+  
 
-  .mobile-menu-scroll ul {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 20px;
-    padding: 0 10px;
-    margin: 0;
-  }
+  
 
-  .mobile-menu-scroll li {
-    flex: 0 0 auto;
-  }
+  
 }
 
 
 
 
-  .mobile-menu-scroll {
-    height: 50px !important;
-    overflow-x: auto !important;
-    overflow-y: hidden;
-    white-space: nowrap;
-    -webkit-overflow-scrolling: touch;
-    display: block !important;
-    scrollbar-width: none;
-  }
+  
 
-  .mobile-menu-scroll::-webkit-scrollbar {
-    display: none !important;
-  }
+  
 
-  .mobile-menu-scroll ul {
-    display: flex !important;
-    flex-direction: row;
-    align-items: center;
-    gap: 20px;
-    padding: 0 10px;
-    margin: 0;
-    list-style: none;
-  }
+  
 
-  .mobile-menu-scroll li {
-    flex: 0 0 auto;
-    display: inline-block;
-  }
+  
 
-  .mobile-menu-scroll a {
-    display: inline-block;
-    padding: 10px 8px;
-    font-size: 14px;
-    color: white;
-    text-decoration: none;
-  }
+  
 }
 
 
 
 
-  .scrolling-menu {
-    height: 50px !important;
-    overflow-x: auto !important;
-    overflow-y: hidden;
-    white-space: nowrap;
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: none;
-  }
+  
 
-  .scrolling-menu::-webkit-scrollbar {
-    display: none !important;
-  }
+  
 
-  .scrolling-menu ul {
-    display: flex !important;
-    flex-direction: row;
-    align-items: center;
-    gap: 18px;
-    padding: 0 10px;
-    margin: 0;
-    list-style: none;
-    height: 50px;
-  }
+  
 
-  .scrolling-menu li {
-    flex: 0 0 auto;
-  }
+  
 
-  .scrolling-menu a {
-    display: inline-block;
-    padding: 10px 8px;
-    font-size: 14px;
-    color: white;
-    text-decoration: none;
-  }
+  
 }
 
 
 
 
-  .mobile-only {
-    display: block !important;
-  }
+  
 
-  .mobile-nav-wrapper {
-    height: 50px !important;
-    background-color: #000;
-    overflow: hidden;
-  }
+  
 
-  .scrolling-menu {
-    height: 50px !important;
-    overflow-x: auto !important;
-    overflow-y: hidden;
-    white-space: nowrap;
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: none;
-  }
+  
 
-  .scrolling-menu::-webkit-scrollbar {
-    display: none !important;
-  }
+  
 
-  .scrolling-menu ul {
-    display: flex !important;
-    flex-direction: row;
-    align-items: center;
-    gap: 18px;
-    padding: 0 10px;
-    margin: 0;
-    list-style: none;
-    height: 50px;
-  }
+  
 
-  .scrolling-menu li {
-    flex: 0 0 auto;
-  }
+  
 
-  .scrolling-menu a {
-    display: inline-block;
-    padding: 10px 8px;
-    font-size: 14px;
-    color: white;
-    text-decoration: none;
-  }
+  
 }
 
 
 
 /* === Clean Final Mobile Swipe Menu Only === */
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+}
+
+
+
+/* === 강제 디바이스 전용 메뉴 분기 === */
+
+
+
+
+
+  
+}
+
+
+
+/* === 모바일 스와이프 메뉴 강제 스타일 적용 === */
+
+
+/* === Final Mobile/PC Menu Separation and Mobile Swipe === */
+
+/* 기본 상태 (PC) */
+.desktop-only {
+  display: block;
+}
+.mobile-only {
+  display: none;
+}
+
 @media (max-width: 768px) {
   .desktop-only {
     display: none !important;
@@ -1443,26 +967,36 @@ h1, p, .nav-bar ul li a, .speech-bubble {
     display: block !important;
   }
 
-  .mobile-nav-wrapper {
-    height: 50px;
-    background-color: #000;
-    overflow: hidden;
+  header {
+    padding: 0 !important;
+    height: 50px !important;
+    background-color: #000 !important;
+    overflow: hidden !important;
+    z-index: 100 !important;
   }
 
-  .mobile-nav-wrapper .scrolling-menu {
-    height: 50px;
-    overflow-x: auto;
+  .mobile-nav-wrapper {
+    height: 50px !important;
+    overflow: hidden !important;
+    background-color: #000 !important;
+  }
+
+  .scrolling-menu {
+    height: 50px !important;
+    overflow-x: auto !important;
     overflow-y: hidden;
     white-space: nowrap;
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
+    display: flex !important;
+    align-items: center;
   }
 
-  .mobile-nav-wrapper .scrolling-menu::-webkit-scrollbar {
-    display: none;
+  .scrolling-menu::-webkit-scrollbar {
+    display: none !important;
   }
 
-  .mobile-nav-wrapper .scrolling-menu ul {
+  .scrolling-menu ul {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -1473,83 +1007,15 @@ h1, p, .nav-bar ul li a, .speech-bubble {
     height: 50px;
   }
 
-  .mobile-nav-wrapper .scrolling-menu li {
+  .scrolling-menu li {
     flex: 0 0 auto;
   }
 
-  .mobile-nav-wrapper .scrolling-menu a {
+  .scrolling-menu a {
     display: inline-block;
     padding: 10px 8px;
     font-size: 14px;
     color: white;
     text-decoration: none;
-  }
-}
-
-
-
-/* === 강제 디바이스 전용 메뉴 분기 === */
-.desktop-only {
-  display: block !important;
-}
-
-.mobile-only {
-  display: none !important;
-}
-
-@media (max-width: 768px) {
-  .desktop-only {
-    display: none !important;
-  }
-  .mobile-only {
-    display: block !important;
-  }
-}
-
-
-
-/* === 모바일 스와이프 메뉴 강제 스타일 적용 === */
-@media (max-width: 768px) {
-  .mobile-nav-wrapper {
-    height: 50px !important;
-    padding: 0 !important;
-    margin: 0 !important;
-    background-color: #000 !important;
-    overflow: hidden !important;
-  }
-
-  .scrolling-menu {
-    height: 50px !important;
-    overflow-x: auto !important;
-    overflow-y: hidden !important;
-    white-space: nowrap !important;
-    -webkit-overflow-scrolling: touch !important;
-    display: flex !important;
-    align-items: center !important;
-    scrollbar-width: none !important;
-  }
-
-  .scrolling-menu::-webkit-scrollbar {
-    display: none !important;
-  }
-
-  .scrolling-menu ul {
-    display: flex !important;
-    padding: 0 10px !important;
-    margin: 0 !important;
-    gap: 18px !important;
-    list-style: none !important;
-  }
-
-  .scrolling-menu li {
-    flex: 0 0 auto !important;
-  }
-
-  .scrolling-menu a {
-    display: inline-block !important;
-    padding: 10px 8px !important;
-    font-size: 14px !important;
-    color: white !important;
-    text-decoration: none !important;
   }
 }
