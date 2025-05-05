@@ -1379,3 +1379,13 @@ h1, p, .nav-bar ul li a, .speech-bubble {
     margin: 0 auto !important;
   }
 }
+
+
+@media (max-width: 768px) {
+  .hero-main-img {
+    width: 320px !important;
+    max-width: 90% !important;
+    display: block !important;
+    margin: 0 auto !important;
+  }
+}
