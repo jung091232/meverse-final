@@ -1253,12 +1253,6 @@ h1, p, .nav-bar ul li a, .speech-bubble {
   animation: floatY 3s ease-in-out infinite;
 }
 
-@media (max-width: 768px) {
-  .nav-bar ul {
-    flex-direction: column;
-    gap: 20px;
-    padding: 20px 0;
-  }
 
   .nav-bar ul li a {
     font-size: 22px;
@@ -1297,15 +1291,6 @@ h1, p, .nav-bar ul li a, .speech-bubble {
   }
 }
 
-@media (max-width: 768px) {
-  .nav-bar ul {
-    flex-direction: row;
-    overflow-x: auto;
-    white-space: nowrap;
-    gap: 30px;
-    padding: 15px 10px;
-    justify-content: flex-start;
-  }
 
   .nav-bar ul li {
     display: inline-block;
@@ -1349,8 +1334,6 @@ h1, p, .nav-bar ul li a, .speech-bubble {
   }
 }
 
-@media (max-width: 768px) {
-}
 
 @media (max-width: 768px) {
   .nav-bar ul li a {
