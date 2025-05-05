@@ -1485,3 +1485,23 @@ h1, p, .nav-bar ul li a, .speech-bubble {
     text-decoration: none;
   }
 }
+
+
+
+/* === 강제 디바이스 전용 메뉴 분기 === */
+.desktop-only {
+  display: block !important;
+}
+
+.mobile-only {
+  display: none !important;
+}
+
+@media (max-width: 768px) {
+  .desktop-only {
+    display: none !important;
+  }
+  .mobile-only {
+    display: block !important;
+  }
+}
