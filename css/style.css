@@ -1284,3 +1284,32 @@ h1, p, .nav-bar ul li a, .speech-bubble {
     padding-bottom: 80px !important;
   }
 }
+
+
+/* === Mobile Swipeable Menu Bar === */
+@media (max-width: 768px) {
+  .mobile-menu-scroll {
+    height: 50px;
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .mobile-menu-scroll::-webkit-scrollbar {
+    display: none;
+  }
+
+  .mobile-menu-scroll ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    padding: 0 10px;
+    margin: 0;
+  }
+
+  .mobile-menu-scroll li {
+    flex: 0 0 auto;
+  }
+}
