@@ -1454,3 +1454,45 @@ header {
     text-decoration: none;
   }
 }
+
+
+
+@media (max-width: 768px) {
+  .hero-section {
+    padding-top: 150px !important;
+  }
+
+  .scrolling-menu {
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    white-space: nowrap !important;
+    -webkit-overflow-scrolling: touch !important;
+    display: block !important;
+    height: 60px;
+  }
+
+  .scrolling-menu::-webkit-scrollbar {
+    display: none !important;
+  }
+
+  .scrolling-menu ul {
+    display: flex !important;
+    flex-direction: row !important;
+    gap: 20px !important;
+    padding: 0 10px !important;
+    margin: 0 !important;
+    list-style: none !important;
+  }
+
+  .scrolling-menu li {
+    flex: 0 0 auto !important;
+  }
+
+  .scrolling-menu a {
+    display: inline-block !important;
+    padding: 16px 10px !important;
+    font-size: 14px !important;
+    color: white !important;
+    text-decoration: none !important;
+  }
+}
