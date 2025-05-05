@@ -1496,3 +1496,46 @@ header {
     text-decoration: none !important;
   }
 }
+
+
+
+@media (max-width: 768px) {
+  .hero-section {
+    padding-top: 150px !important;
+  }
+
+  .scrolling-menu {
+    display: block !important;
+    overflow-x: auto !important;
+    overflow-y: hidden;
+    white-space: nowrap !important;
+    -webkit-overflow-scrolling: touch !important;
+    height: 60px !important;
+    scrollbar-width: none;
+  }
+
+  .scrolling-menu::-webkit-scrollbar {
+    display: none !important;
+  }
+
+  .scrolling-menu ul {
+    display: flex !important;
+    flex-direction: row;
+    gap: 20px;
+    padding: 0 10px;
+    margin: 0;
+    list-style: none;
+  }
+
+  .scrolling-menu li {
+    flex: 0 0 auto !important;
+  }
+
+  .scrolling-menu a {
+    display: inline-block;
+    padding: 16px 10px;
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+  }
+}
