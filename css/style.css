@@ -1377,6 +1377,7 @@ h1, p, .nav-bar ul li a, .speech-bubble {
     gap: 40px;
     padding: 20px 10px;
     justify-content: flex-start;
+    width: max-content;
   }
 
   .nav-bar ul li {
@@ -1384,7 +1385,7 @@ h1, p, .nav-bar ul li a, .speech-bubble {
   }
 
   .nav-bar ul li a {
-    font-size: 100px !important;
+    font-size: 70px !important;
     color: #00ffff !important;
     font-weight: bold !important;
     white-space: nowrap;
