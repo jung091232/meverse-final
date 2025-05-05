@@ -1228,7 +1228,8 @@ h1, p, .nav-bar ul li a, .speech-bubble {
   100% { opacity: 1; transform: translateY(0); }
 }
 
+
 .join-memon {
-  position: relative;
-  left: -50px;
+  position: relative !important;
+  left: -80px !important;
 }
