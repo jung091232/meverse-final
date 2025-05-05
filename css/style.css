@@ -17,6 +17,9 @@ header {
 }
 
 .nav-bar ul li a {
+  font-size: 24px;
+  color: #00ffff;
+  font-weight: 900;
   color: #00ffc3; text-decoration: none; font-weight: bold; font-size: 20px;
 }
 
@@ -1248,4 +1251,48 @@ h1, p, .nav-bar ul li a, .speech-bubble {
   left: -80px !important;
   width: 420px;
   animation: floatY 3s ease-in-out infinite;
+}
+
+@media (max-width: 768px) {
+  .nav-bar ul {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 0;
+  }
+
+  .nav-bar ul li a {
+    font-size: 22px;
+    color: #00ffff;
+    font-weight: bold;
+  }
+
+  .hero-section,
+  .flow-full-section,
+  .about-meverse-section,
+  .tokenomics-section,
+  .roadmap-section,
+  .faq-section {
+    padding: 60px 20px !important;
+  }
+
+  .hero-content h1 {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .hero-content p {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .hero-image img {
+    max-width: 90%;
+    height: auto;
+  }
 }
