@@ -1237,10 +1237,6 @@ body, html { color: #fff; }
   animation: floatY 3s ease-in-out infinite;
 }
 
-@media (max-width: 768px) {
-  header {
-    overflow-x: auto !important;
-  }
 
   .nav-bar {
     overflow-x: auto !important;
@@ -1311,10 +1307,6 @@ body, html { color: #fff; }
 }
 
 /* Mobile optimized nav-bar */
-@media (max-width: 768px) {
-  header {
-    overflow-x: auto !important;
-  }
 
   .nav-bar {
     overflow-x: auto !important;
@@ -1375,5 +1367,42 @@ body, html { color: #fff; }
   .hero-image img {
     max-width: 90%;
     height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    overflow-x: auto !important;
+  }
+
+  .nav-bar {
+    overflow-x: auto !important;
+  }
+
+  .nav-bar ul {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto !important;
+    white-space: nowrap !important;
+    gap: 20px;
+    padding: 20px 10px;
+    justify-content: flex-start;
+    width: max-content;
+  }
+
+  .nav-bar ul li {
+    display: inline-block;
+  }
+
+  .nav-bar ul li a {
+    font-size: 70px !important;
+    color: #00ffff !important;
+    font-weight: bold !important;
+    white-space: nowrap !important;
+    text-shadow:
+      0 0 5px #00ffff,
+      0 0 10px #00ffff,
+      0 0 20px #00ffff,
+      0 0 40px #00ffff !important;
   }
 }
