@@ -1249,17 +1249,6 @@ h1, p, .nav-bar ul li a, .speech-bubble {
   animation: floatY 3s ease-in-out infinite;
 }
 
-@media (max-width: 768px) {
-  .nav-bar ul {
-    display: flex;
-    flex-direction: row;
-    overflow-x: auto;
-    white-space: nowrap;
-    gap: 20px;
-    padding: 20px 10px;
-    justify-content: flex-start;
-    width: max-content;
-  }
 
   .nav-bar ul li {
     display: inline-block;
@@ -1304,10 +1293,6 @@ h1, p, .nav-bar ul li a, .speech-bubble {
 }
 
 
-@media (max-width: 768px) {
-  header {
-    overflow-x: auto !important;
-  }
 
   .nav-bar {
     overflow-x: auto !important;
@@ -1315,5 +1300,66 @@ h1, p, .nav-bar ul li a, .speech-bubble {
 
   .nav-bar ul {
     width: max-content !important;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    overflow-x: auto;
+  }
+
+  .nav-bar {
+    overflow-x: auto;
+  }
+
+  .nav-bar ul {
+    flex-direction: row;
+    overflow-x: auto;
+    white-space: nowrap;
+    width: max-content;
+    gap: 20px;
+    padding: 10px;
+    justify-content: flex-start;
+  }
+
+  .nav-bar ul li {
+    display: inline-block;
+  }
+
+  .nav-bar ul li a {
+    font-size: 60px !important;
+    color: #00ffff;
+    font-weight: bold;
+    white-space: nowrap;
+  }
+
+  .hero-section,
+  .flow-full-section,
+  .about-meverse-section,
+  .tokenomics-section,
+  .roadmap-section,
+  .faq-section {
+    padding: 60px 20px !important;
+  }
+
+  .hero-content h1 {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .hero-content p {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 12px;
+    justify-content: center;
+  }
+
+  .hero-image img {
+    max-width: 90%;
+    height: auto;
   }
 }
