@@ -1350,7 +1350,13 @@ h1, p, .nav-bar ul li a, .speech-bubble {
 }
 
 @media (max-width: 768px) {
+}
+
+@media (max-width: 768px) {
   .nav-bar ul li a {
     font-size: 50px !important;
+    color: #00ffff !important;
+    font-weight: bold !important;
+    white-space: nowrap;
   }
 }
