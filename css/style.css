@@ -1358,3 +1358,49 @@ h1, p, .nav-bar ul li a, .speech-bubble {
     text-decoration: none;
   }
 }
+
+
+/* === Final Forced Mobile Swipe Menu === */
+@media (max-width: 768px) {
+  .mobile-nav-wrapper {
+    height: 50px !important;
+    background-color: #000; /* optional */
+    overflow: hidden;
+  }
+
+  .scrolling-menu {
+    height: 50px !important;
+    overflow-x: auto !important;
+    overflow-y: hidden;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .scrolling-menu::-webkit-scrollbar {
+    display: none !important;
+  }
+
+  .scrolling-menu ul {
+    display: flex !important;
+    flex-direction: row;
+    align-items: center;
+    gap: 18px;
+    padding: 0 10px;
+    margin: 0;
+    list-style: none;
+    height: 50px;
+  }
+
+  .scrolling-menu li {
+    flex: 0 0 auto;
+  }
+
+  .scrolling-menu a {
+    display: inline-block;
+    padding: 10px 8px;
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+  }
+}
