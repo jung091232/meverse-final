@@ -12,18 +12,13 @@ header {
   z-index: 1 !important; background-color: rgba(0,0,0,0.7); padding: 20px;
 }
 
-.nav-bar ul {
   display: flex; justify-content: center; list-style: none; gap: 35px;
 }
 
-.nav-bar ul li a {
-  font-size: 24px;
   color: #00ffff;
   font-weight: 900;
-  color: #00ffc3; text-decoration: none; font-weight: bold; font-size: 20px;
 }
 
-.nav-bar ul li a:hover {
   color: #fff700;
 }
 
@@ -37,11 +32,9 @@ header {
 }
 
 .hero-content h1 {
-  font-size: 48px; margin-bottom: 20px;
 }
 
 .hero-content p {
-  font-size: 20px; margin-bottom: 30px;
 }
 
 .hero-buttons {
@@ -49,7 +42,6 @@ header {
 }
 
 .btn-primary, .btn-secondary {
-  padding: 12px 24px; border-radius: 8px; cursor: pointer; font-size: 18px;
   border: none;
 }
 
@@ -75,13 +67,11 @@ header {
   left: 420px;
   transform: translateY(-50%);
   background-color: rgba(255,255,255,0.1); padding: 12px 16px;
-  border-radius: 12px; font-size: 16px; color: #fff; max-width: 200px;
 }
 
 body, html { color: #fff; }
 
 /* Neon text 효과 적용 */
-h1, p, .nav-bar ul li a, .speech-bubble {
   text-shadow:
     0 0 5px #00ffc3,
     0 0 10px #00ffc3,
@@ -96,7 +86,6 @@ h1, p, .nav-bar ul li a, .speech-bubble {
   background-color: rgba(255, 255, 255, 0.1);
   color: #00ffc3;
   padding: 12px 16px;
-  border-radius: 12px; font-size: 16px; font-weight: bold;
   max-width: 220px;
   box-shadow: 0 0 10px rgba(0, 255, 195, 0.7);
   z-index: 2;
@@ -129,12 +118,10 @@ h1, p, .nav-bar ul li a, .speech-bubble {
 }
 
 .hero-content h1 {
-  font-size: 64px; /* 원래 크기 명확히 복구 */
   margin-bottom: 20px;
 }
 
 .hero-content p {
-  font-size: 24px; /* 원래 크기 명확히 복구 */
   margin-bottom: 30px;
 }
 
@@ -144,7 +131,6 @@ h1, p, .nav-bar ul li a, .speech-bubble {
 
 .btn-primary, .btn-secondary {
   padding: 14px 28px; /* 버튼 크기 복구 */
-  border-radius: 8px; cursor: pointer; font-size: 20px;
   border: none;
 }
 
@@ -176,7 +162,6 @@ h1, p, .nav-bar ul li a, .speech-bubble {
   color: #000000;
   padding: 12px 16px;
   border-radius: 15px;
-  font-size: 16px;
   font-weight: bold;
   max-width: 220px;
   box-shadow: 0 0 15px rgba(0, 255, 195, 0.8);
@@ -199,7 +184,6 @@ h1, p, .nav-bar ul li a, .speech-bubble {
   position: relative;
   position: relative;
   text-align: center;
-  overflow: visible; /* 이미지 크기 제한 명확히 제거 */
   width: auto;
   height: auto;
 }
@@ -224,13 +208,11 @@ h1, p, .nav-bar ul li a, .speech-bubble {
   color: #000000;
   padding: 12px 16px;
   border-radius: 15px;
-  font-size: 16px;
   font-weight: bold;
   max-width: 220px;
   box-shadow: 0 0 15px rgba(0, 255, 195, 0.8);
   z-index: 2;
   text-align: center;
-  white-space: nowrap; /* 텍스트 2줄로 명확히 정렬 방지 */
 }
 
 .speech-bubble span {
@@ -246,13 +228,11 @@ h1, p, .nav-bar ul li a, .speech-bubble {
   color: #000000;
   padding: 16px 20px;
   border-radius: 15px;
-  font-size: 20px; /* 텍스트 사이즈 명확히 확대 */
   font-weight: bold;
   max-width: 260px;
   box-shadow: 0 0 15px rgba(0, 255, 195, 0.8);
   z-index: 2;
   text-align: center;
-  white-space: nowrap;
 }
 
 .speech-bubble::after {
@@ -293,13 +273,11 @@ h1, p, .nav-bar ul li a, .speech-bubble {
 }
 
 .feature-card-new h3 {
-  font-size: 24px;
   color: #fff;
   margin-bottom: 5px;
 }
 
 .feature-card-new p {
-  font-size: 18px;
   color: #fff;
 }
 
@@ -356,7 +334,6 @@ h1, p, .nav-bar ul li a, .speech-bubble {
 }
 
 .tokenomics-text h2 {
-  font-size: 36px;
   margin-bottom: 20px;
   color: #00ffc3;
   text-align: center;
@@ -372,7 +349,6 @@ h1, p, .nav-bar ul li a, .speech-bubble {
   border: 1px solid rgba(0, 255, 195, 0.6);
   padding: 15px;
   text-align: center;
-  font-size: 18px;
 }
 
 .tokenomics-text th {
@@ -417,14 +393,12 @@ h1, p, .nav-bar ul li a, .speech-bubble {
 }
 
 .about-meverse-box h2 {
-  font-size: 36px;
   margin-bottom: 20px;
   color: #00ffc3;
   text-shadow: 0 0 10px #00ffc3;
 }
 
 .about-meverse-box p {
-  font-size: 20px;
   line-height: 1.6;
 }
 
@@ -452,7 +426,6 @@ h1, p, .nav-bar ul li a, .speech-bubble {
 }
 
 .tokenomics-text h2 {
-  font-size: 36px;
   margin-bottom: 20px;
   color: #00ffc3;
   text-align: center;
@@ -502,12 +475,10 @@ h1, p, .nav-bar ul li a, .speech-bubble {
   color: #000000;
   padding: 12px 16px;
   border-radius: 15px;
-  font-size: 18px;
   font-weight: bold;
   max-width: 220px;
   box-shadow: 0 0 15px rgba(0, 255, 195, 0.8);
   text-align: center;
-  white-space: nowrap;
   z-index: 2;
 }
 
@@ -544,12 +515,10 @@ h1, p, .nav-bar ul li a, .speech-bubble {
   color: #000000;
   padding: 12px 16px;
   border-radius: 15px;
-  font-size: 18px;
   font-weight: bold;
   max-width: 220px;
   box-shadow: 0 0 15px rgba(0, 255, 195, 0.8);
   text-align: center;
-  white-space: nowrap;
   z-index: 2;
 }
 
@@ -574,12 +543,10 @@ h1, p, .nav-bar ul li a, .speech-bubble {
   color: #000000;
   padding: 12px 16px;
   border-radius: 15px;
-  font-size: 18px;
   font-weight: bold;
   max-width: 220px;
   box-shadow: 0 0 15px rgba(0, 255, 195, 0.8);
   text-align: center;
-  white-space: nowrap;
   z-index: 2;
 }
 
@@ -616,12 +583,10 @@ h1, p, .nav-bar ul li a, .speech-bubble {
   color: #000000;
   padding: 14px 20px;
   border-radius: 15px;
-  font-size: 18px;
   font-weight: bold;
   max-width: 240px;
   box-shadow: 0 0 20px rgba(0, 255, 195, 0.8);
   text-align: center;
-  white-space: nowrap;
   z-index: 2;
 }
 
@@ -646,12 +611,10 @@ h1, p, .nav-bar ul li a, .speech-bubble {
   color: #000000;
   padding: 14px 20px;
   border-radius: 15px;
-  font-size: 18px;
   font-weight: bold;
   max-width: 240px;
   box-shadow: 0 0 20px rgba(0, 255, 195, 0.8);
   text-align: center;
-  white-space: nowrap;
   z-index: 2;
 }
 
@@ -719,12 +682,10 @@ h1, p, .nav-bar ul li a, .speech-bubble {
   color: #000000;
   padding: 12px 16px;
   border-radius: 15px;
-  font-size: 18px;
   font-weight: bold;
   max-width: 220px;
   box-shadow: 0 0 15px rgba(0, 255, 195, 0.8);
   text-align: center;
-  white-space: nowrap;
   z-index: 2;
 }
 
@@ -751,7 +712,6 @@ h1, p, .nav-bar ul li a, .speech-bubble {
 }
 
 .roadmap-text h2 {
-  font-size: 36px;
   margin-bottom: 20px;
   color: #00ffc3;
   text-align: center;
@@ -767,7 +727,6 @@ h1, p, .nav-bar ul li a, .speech-bubble {
   border: 1px solid rgba(0, 255, 195, 0.6);
   padding: 15px;
   text-align: center;
-  font-size: 18px;
 }
 
 .roadmap-text th {
@@ -808,7 +767,6 @@ h1, p, .nav-bar ul li a, .speech-bubble {
 }
 
 .faq-text h2 {
-  font-size: 36px;
   margin-bottom: 20px;
   color: #00ffc3;
   text-align: center;
@@ -822,7 +780,6 @@ h1, p, .nav-bar ul li a, .speech-bubble {
 
 .faq-text li {
   margin-bottom: 20px;
-  font-size: 18px;
   color: #ffffff;
 }
 
@@ -848,7 +805,6 @@ h1, p, .nav-bar ul li a, .speech-bubble {
 }
 
 .exchange-section h2 {
-  font-size: 36px;
   color: #00ffc3;
   margin-bottom: 40px;
   text-shadow: 0 0 10px #00ffc3;
@@ -881,7 +837,6 @@ h1, p, .nav-bar ul li a, .speech-bubble {
 }
 
 .exchange-section h2 {
-  font-size: 36px;
   color: #00ffc3;
   margin-bottom: 40px;
   text-shadow: 0 0 10px #00ffc3;
@@ -914,7 +869,6 @@ h1, p, .nav-bar ul li a, .speech-bubble {
 }
 
 .exchange-section h2 {
-  font-size: 36px;
   color: #00ffc3;
   margin-bottom: 40px;
   text-shadow: 0 0 10px #00ffc3;
@@ -947,7 +901,6 @@ h1, p, .nav-bar ul li a, .speech-bubble {
 
 .exchange-section .section-title {
     color: #fff;
-    font-size: 2.5rem;
     margin-bottom: 40px;
 }
 
@@ -981,7 +934,6 @@ h1, p, .nav-bar ul li a, .speech-bubble {
 
 .exchange-section .section-title {
     color: #fff;
-    font-size: 2.5rem;
     margin-bottom: 40px;
 }
 
@@ -1015,7 +967,6 @@ h1, p, .nav-bar ul li a, .speech-bubble {
 
 .exchange-section .section-title {
     color: #fff;
-    font-size: 2.5rem;
     margin-bottom: 40px;
 }
 
@@ -1106,12 +1057,10 @@ h1, p, .nav-bar ul li a, .speech-bubble {
 }
 
 .hero-text h1 {
-    font-size: 3.5rem;
     margin-bottom: 20px;
 }
 
 .hero-text p {
-    font-size: 1.5rem;
     margin-bottom: 30px;
 }
 
@@ -1254,8 +1203,6 @@ h1, p, .nav-bar ul li a, .speech-bubble {
 }
 
 
-  .nav-bar ul li a {
-    font-size: 22px;
     color: #00ffff;
     font-weight: bold;
   }
@@ -1270,12 +1217,10 @@ h1, p, .nav-bar ul li a, .speech-bubble {
   }
 
   .hero-content h1 {
-    font-size: 32px;
     text-align: center;
   }
 
   .hero-content p {
-    font-size: 18px;
     text-align: center;
   }
 
@@ -1292,15 +1237,11 @@ h1, p, .nav-bar ul li a, .speech-bubble {
 }
 
 
-  .nav-bar ul li {
     display: inline-block;
   }
 
-  .nav-bar ul li a {
-    font-size: 28px;
     color: #00ffff;
     font-weight: bold;
-    white-space: nowrap;
   }
 
   .hero-section,
@@ -1313,12 +1254,10 @@ h1, p, .nav-bar ul li a, .speech-bubble {
   }
 
   .hero-content h1 {
-    font-size: 32px;
     text-align: center;
   }
 
   .hero-content p {
-    font-size: 18px;
     text-align: center;
   }
 
@@ -1336,44 +1275,57 @@ h1, p, .nav-bar ul li a, .speech-bubble {
 
 
 
-  .nav-bar ul li {
     display: inline-block;
   }
 
-  .nav-bar ul li a {
-    font-size: 100px !important;
     color: #00ffff !important;
     font-weight: bold !important;
-    white-space: nowrap;
   }
 }
 
 
-  .nav-bar ul li {
     display: inline-block;
   }
 
-  .nav-bar ul li a {
-    font-size: 100px !important;
     color: #00ffff !important;
     font-weight: bold !important;
-    white-space: nowrap;
   }
 }
 @media (max-width: 768px) {
   header {
-    overflow-x: auto;
+  }
+
+  }
+
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    padding: 20px 10px;
+    justify-content: flex-start;
+    width: max-content;
+  }
+
+    display: inline-block;
+  }
+
+    color: #00ffff !important;
+    font-weight: bold !important;
+  }
+}
+@media (max-width: 768px) {
+  header {
+    overflow-x: auto !important;
   }
 
   .nav-bar {
-    overflow-x: auto;
+    overflow-x: auto !important;
   }
 
   .nav-bar ul {
     display: flex;
     flex-direction: row;
-    overflow-x: auto;
-    white-space: nowrap;
+    overflow-x: auto !important;
+    white-space: nowrap !important;
     gap: 40px;
     padding: 20px 10px;
     justify-content: flex-start;
@@ -1388,6 +1340,6 @@ h1, p, .nav-bar ul li a, .speech-bubble {
     font-size: 70px !important;
     color: #00ffff !important;
     font-weight: bold !important;
-    white-space: nowrap;
+    white-space: nowrap !important;
   }
 }
