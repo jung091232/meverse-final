@@ -1293,6 +1293,24 @@ body, html { color: #fff; }
   }
 }
 
+/* PC default nav-bar */
+.nav-bar ul li a {
+  color: #00ffc3;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+  text-shadow:
+    0 0 5px #00ffc3,
+    0 0 10px #00ffc3,
+    0 0 20px #00ffc3,
+    0 0 40px #00ffc3;
+}
+
+.nav-bar ul li a:hover {
+  color: #fff700;
+}
+
+/* Mobile optimized nav-bar */
 @media (max-width: 768px) {
   header {
     overflow-x: auto !important;
@@ -1322,6 +1340,11 @@ body, html { color: #fff; }
     color: #00ffff !important;
     font-weight: bold !important;
     white-space: nowrap !important;
+    text-shadow:
+      0 0 5px #00ffff,
+      0 0 10px #00ffff,
+      0 0 20px #00ffff,
+      0 0 40px #00ffff !important;
   }
 
   .hero-section,
