@@ -953,10 +953,7 @@ h1, p, .nav-bar ul li a,
   display: none;
 }
 
-@media (max-width: 768px) {
-  .desktop-only {
-    display: none !important;
-  }
+
 
   .mobile-only {
     display: block !important;
@@ -1416,10 +1413,7 @@ header {
 
 
 
-@media (max-width: 768px) {
-  .hero-section {
-    padding-top: 120px !important;
-  }
+
 
   .scrolling-menu {
     overflow-x: auto !important;
@@ -1456,10 +1450,7 @@ header {
 
 
 
-@media (max-width: 768px) {
-  .hero-section {
-    padding-top: 150px !important;
-  }
+
 
   .scrolling-menu {
     overflow-x: auto !important;
@@ -1498,10 +1489,7 @@ header {
 
 
 
-@media (max-width: 768px) {
-  .hero-section {
-    padding-top: 150px !important;
-  }
+
 
   .scrolling-menu {
     display: block !important;
@@ -1541,10 +1529,7 @@ header {
 
 
 
-@media (max-width: 768px) {
-  .hero-section {
-    padding-top: 160px !important;
-  }
+
 
   .scrolling-menu {
     display: block !important;
@@ -1579,5 +1564,47 @@ header {
     font-size: 14px;
     color: white;
     text-decoration: none;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .hero-section {
+    padding-top: 160px !important;
+  }
+
+  .scrolling-menu {
+    display: block !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    white-space: nowrap !important;
+    -webkit-overflow-scrolling: touch !important;
+    scrollbar-width: none;
+    height: 60px !important;
+  }
+
+  .scrolling-menu::-webkit-scrollbar {
+    display: none !important;
+  }
+
+  .scrolling-menu ul {
+    display: flex !important;
+    flex-direction: row !important;
+    gap: 20px !important;
+    padding: 0 10px !important;
+    margin: 0 !important;
+    list-style: none !important;
+  }
+
+  .scrolling-menu li {
+    flex: 0 0 auto !important;
+  }
+
+  .scrolling-menu a {
+    display: inline-block !important;
+    padding: 16px 10px !important;
+    font-size: 14px !important;
+    color: white !important;
+    text-decoration: none !important;
   }
 }
