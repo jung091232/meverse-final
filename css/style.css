@@ -1323,3 +1323,59 @@ h1, p, .nav-bar ul li a, .speech-bubble {
     top: auto !important;
   }
 }
+
+
+/* === Final Mobile + PC Section & Bubble Fixes === */
+@media (max-width: 768px) {
+  header {
+    margin-bottom: 0 !important;
+  }
+
+  .hero-section {
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+
+  .flow-full-section,
+  .about-meverse-section,
+  .exchange-section {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+
+  #presale-join > div[style*="display: flex"] {
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 10px !important;
+  }
+
+  #presale-join img {
+    width: 280px !important;
+  }
+
+  #presale-join .speech-bubble {
+    position: static !important;
+    margin-top: 10px !important;
+    margin-left: 0 !important;
+    width: 90% !important;
+    text-align: center !important;
+  }
+}
+
+/* Desktop adjustments for speech bubble proximity */
+#presale-join .speech-bubble {
+  position: static;
+  margin-left: 20px;
+  width: 220px;
+}
+
+
+@media (max-width: 768px) {
+  .hero-image img {
+    width: 300px !important;
+    max-width: 90% !important;
+    display: block !important;
+    margin: 0 auto !important;
+  }
+}
