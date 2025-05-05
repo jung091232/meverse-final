@@ -1251,13 +1251,7 @@ h1, p, .nav-bar ul li a, .speech-bubble {
 }
 
 
-/* === Mobile Menu Optimization === */
-@media (max-width: 768px) {
-  header {
-    height: 50px !important;
-    overflow-x: auto;
-    white-space: nowrap;
-  }
+
 
   header nav ul {
     display: flex;
@@ -1286,15 +1280,7 @@ h1, p, .nav-bar ul li a, .speech-bubble {
 }
 
 
-/* === Mobile Swipeable Menu Bar === */
-@media (max-width: 768px) {
-  .mobile-menu-scroll {
-    height: 50px;
-    overflow-x: auto;
-    white-space: nowrap;
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: none;
-  }
+
 
   .mobile-menu-scroll::-webkit-scrollbar {
     display: none;
@@ -1315,11 +1301,7 @@ h1, p, .nav-bar ul li a, .speech-bubble {
 }
 
 
-/* === Force Apply Mobile Swipeable Menu Styles === */
-@media (max-width: 768px) {
-  header {
-    height: 50px !important;
-  }
+
 
   .mobile-menu-scroll {
     height: 50px !important;
@@ -1360,11 +1342,55 @@ h1, p, .nav-bar ul li a, .speech-bubble {
 }
 
 
-/* === Final Forced Mobile Swipe Menu === */
-@media (max-width: 768px) {
+
+
+  .scrolling-menu {
+    height: 50px !important;
+    overflow-x: auto !important;
+    overflow-y: hidden;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .scrolling-menu::-webkit-scrollbar {
+    display: none !important;
+  }
+
+  .scrolling-menu ul {
+    display: flex !important;
+    flex-direction: row;
+    align-items: center;
+    gap: 18px;
+    padding: 0 10px;
+    margin: 0;
+    list-style: none;
+    height: 50px;
+  }
+
+  .scrolling-menu li {
+    flex: 0 0 auto;
+  }
+
+  .scrolling-menu a {
+    display: inline-block;
+    padding: 10px 8px;
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+  }
+}
+
+
+
+
+  .mobile-only {
+    display: block !important;
+  }
+
   .mobile-nav-wrapper {
     height: 50px !important;
-    background-color: #000; /* optional */
+    background-color: #000;
     overflow: hidden;
   }
 
@@ -1406,15 +1432,8 @@ h1, p, .nav-bar ul li a, .speech-bubble {
 }
 
 
-/* === Responsive Visibility Control === */
-.desktop-only {
-  display: block;
-}
 
-.mobile-only {
-  display: none;
-}
-
+/* === Clean Final Mobile Swipe Menu Only === */
 @media (max-width: 768px) {
   .desktop-only {
     display: none !important;
@@ -1425,26 +1444,26 @@ h1, p, .nav-bar ul li a, .speech-bubble {
   }
 
   .mobile-nav-wrapper {
-    height: 50px !important;
+    height: 50px;
     background-color: #000;
     overflow: hidden;
   }
 
-  .scrolling-menu {
-    height: 50px !important;
-    overflow-x: auto !important;
+  .mobile-nav-wrapper .scrolling-menu {
+    height: 50px;
+    overflow-x: auto;
     overflow-y: hidden;
     white-space: nowrap;
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
   }
 
-  .scrolling-menu::-webkit-scrollbar {
-    display: none !important;
+  .mobile-nav-wrapper .scrolling-menu::-webkit-scrollbar {
+    display: none;
   }
 
-  .scrolling-menu ul {
-    display: flex !important;
+  .mobile-nav-wrapper .scrolling-menu ul {
+    display: flex;
     flex-direction: row;
     align-items: center;
     gap: 18px;
@@ -1454,11 +1473,11 @@ h1, p, .nav-bar ul li a, .speech-bubble {
     height: 50px;
   }
 
-  .scrolling-menu li {
+  .mobile-nav-wrapper .scrolling-menu li {
     flex: 0 0 auto;
   }
 
-  .scrolling-menu a {
+  .mobile-nav-wrapper .scrolling-menu a {
     display: inline-block;
     padding: 10px 8px;
     font-size: 14px;
