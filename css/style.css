@@ -1414,3 +1414,43 @@ header {
 .hero-section {
   padding-top: 100px !important;
 }
+
+
+
+@media (max-width: 768px) {
+  .hero-section {
+    padding-top: 120px !important;
+  }
+
+  .scrolling-menu {
+    overflow-x: auto !important;
+    white-space: nowrap !important;
+    -webkit-overflow-scrolling: touch !important;
+    display: flex !important;
+    scrollbar-width: none;
+  }
+
+  .scrolling-menu::-webkit-scrollbar {
+    display: none !important;
+  }
+
+  .scrolling-menu ul {
+    display: flex !important;
+    gap: 20px;
+    padding: 0 10px;
+    margin: 0;
+    list-style: none;
+  }
+
+  .scrolling-menu li {
+    flex: 0 0 auto !important;
+  }
+
+  .scrolling-menu a {
+    display: inline-block;
+    padding: 12px 10px;
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+  }
+}
