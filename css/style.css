@@ -1246,7 +1246,7 @@ h1, p, .nav-bar ul li a, .speech-bubble {
   100% { box-shadow: 0 0 0px #ffcc00; }
 }
 
-/* Speech bubble style */
+/* Speech bubble */
 .speech-bubble {
   background: rgba(255, 255, 255, 0.1);
   color: #fff;
