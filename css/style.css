@@ -16,13 +16,7 @@ header {
   display: flex; justify-content: center; list-style: none; gap: 35px;
 }
 
-.nav-bar ul li a {
-  color: #00ffc3; text-decoration: none; font-weight: bold; font-size: 20px;
-}
 
-.nav-bar ul li a:hover {
-  color: #fff700;
-}
 
 .hero-section {
   display: flex; justify-content: center; align-items: center; height: 100vh;
@@ -78,13 +72,6 @@ header {
 body, html { color: #fff; }
 
 /* Neon text 효과 적용 */
-h1, p, .nav-bar ul li a, .speech-bubble {
-  text-shadow:
-    0 0 5px #00ffc3,
-    0 0 10px #00ffc3,
-    0 0 20px #00ffc3,
-    0 0 40px #00ffc3;
-}
 
 /* 말풍선 꼬리 명확히 추가 */
 .speech-bubble {
@@ -1248,6 +1235,62 @@ h1, p, .nav-bar ul li a, .speech-bubble {
   left: -80px !important;
   width: 420px;
   animation: floatY 3s ease-in-out infinite;
+}
+
+@media (max-width: 768px) {
+  header {
+    overflow-x: auto !important;
+  }
+
+  .nav-bar {
+    overflow-x: auto !important;
+  }
+
+  .nav-bar ul {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto !important;
+    white-space: nowrap !important;
+    gap: 30px;
+    padding: 20px 10px;
+    justify-content: flex-start;
+    width: max-content;
+  }
+
+  .nav-bar ul li {
+    display: inline-block;
+  }
+
+
+  .hero-section,
+  .flow-full-section,
+  .about-meverse-section,
+  .tokenomics-section,
+  .roadmap-section,
+  .faq-section {
+    padding: 60px 20px !important;
+  }
+
+  .hero-content h1 {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .hero-content p {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .hero-image img {
+    max-width: 90%;
+    height: auto;
+  }
 }
 
 @media (max-width: 768px) {
