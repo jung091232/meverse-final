@@ -1283,3 +1283,43 @@ h1, p, .nav-bar ul li a, .speech-bubble {
     text-align: center !important;
   }
 }
+
+
+/* === Updated Mobile Fixes === */
+@media (max-width: 768px) {
+  header {
+    margin-bottom: 5px !important;
+  }
+
+  .hero-section {
+    padding-top: 20px !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+
+  .flow-full-section {
+    margin-top: 0 !important;
+    padding-top: 10px !important;
+  }
+
+  #presale-join > div[style*="display: flex"] {
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 10px !important;
+  }
+
+  #presale-join img {
+    width: 280px !important;
+    margin: 0 auto !important;
+  }
+
+  #presale-join div[style*="position: absolute"],
+  #presale-join div[style*="background: rgba"] {
+    position: static !important;
+    margin: 10px auto 0 !important;
+    width: 90% !important;
+    text-align: center !important;
+    left: auto !important;
+    top: auto !important;
+  }
+}
