@@ -1667,3 +1667,38 @@ header {
     white-space: nowrap;
   }
 }
+
+
+.mobile-nav-fixed {
+  display: none;
+}
+@media (max-width: 1024px) {
+  .desktop-only {
+    display: none !important;
+  }
+  .mobile-nav-fixed {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.95);
+    z-index: 9999;
+    padding: 20px;
+  }
+  .mobile-scroll-fixed {
+    display: flex;
+    overflow-x: auto;
+    gap: 30px;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+  }
+  .mobile-scroll-fixed a {
+    font-size: 50px;
+    color: white;
+    text-decoration: none;
+    text-shadow: 0 0 5px #44ff99;
+    white-space: nowrap;
+  }
+}
