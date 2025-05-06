@@ -1570,3 +1570,30 @@ header {
 .tokenomics-section {
   margin-top: -80px !important;
 }
+
+
+/* Mobile nav: swipe + large text */
+@media (max-width: 768px) {
+  .mobile-nav-wrapper .scrolling-menu {
+    display: flex;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+    gap: 30px;
+    padding: 10px 20px;
+  }
+  .mobile-nav-wrapper .scrolling-menu ul {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .mobile-nav-wrapper .scrolling-menu li a {
+    font-size: 50px !important;
+    white-space: nowrap;
+    color: #fff;
+    text-shadow: 0 0 5px #44ff99;
+  }
+}
