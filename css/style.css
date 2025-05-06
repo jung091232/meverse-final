@@ -1553,21 +1553,20 @@ header {
 }
 
 
-/* Enlarge Memon character in Join section */
-#join .memon img {
-  max-width: 400px;
-  width: 100%;
-  height: auto;
+/* Reduce spacing between Join and Tokenomics sections */
+#presale-join {
+  margin-bottom: -80px !important;
 }
-@media (max-width: 768px) {
-  #join .memon img {
-    max-width: 90%;
-  }
+.tokenomics-section {
+  margin-top: -50px !important;
+  padding-top: 0 !important;
 }
 
 
-/* Pull Tokenomics section upward */
-#tokenomics {
-  padding-bottom: 0 !important;
-  margin-bottom: -50px !important;
+/* Tightly reduce spacing between Join and Tokenomics */
+#presale-join {
+  margin-bottom: -120px !important;
+}
+.tokenomics-section {
+  margin-top: -80px !important;
 }
