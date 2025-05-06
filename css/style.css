@@ -1509,3 +1509,65 @@ header {
     padding-top: 150px !important;
   }
 }
+
+
+/* ============================================================
+.hero-chart-bg {
+  position: absolute;
+  top: 0;
+  right: -100%;
+  width: 200%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.2;
+}
+.hero-chart-bg img {
+  height: 100%;
+  width: auto;
+  animation: slideChart 30s linear infinite;
+}
+@keyframes slideChart {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+
+/* ============================================================
+   UNIFIED SECTION SPACING (Hero to FAQ)
+============================================================ */
+.hero-section,
+#about,
+#tokenomics,
+#roadmap,
+#faq {
+  padding: 150px 20px;
+}
+
+
+/* Ensure consistent spacing between Tokenomics and Join section */
+#tokenomics,
+#join {
+  padding: 150px 20px !important;
+  margin: 0 !important;
+}
+
+
+/* Enlarge Memon character in Join section */
+#join .memon img {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+}
+@media (max-width: 768px) {
+  #join .memon img {
+    max-width: 90%;
+  }
+}
+
+
+/* Pull Tokenomics section upward */
+#tokenomics {
+  padding-bottom: 0 !important;
+  margin-bottom: -50px !important;
+}
