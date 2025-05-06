@@ -1771,3 +1771,33 @@ header {
     border-radius: 8px;
   }
 }
+
+
+.community-section {
+  padding: 100px 20px;
+  text-align: center;
+  background: #000;
+}
+.community-section h2 {
+  color: #fff;
+  font-size: 36px;
+  margin-bottom: 30px;
+  text-shadow: 0 0 10px #44ff99;
+}
+.community-icons {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+.community-icons a img {
+  width: 80px;
+  height: 80px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #44ff99;
+}
+.community-icons a img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px #44ff99, 0 0 40px #44ff99;
+}
