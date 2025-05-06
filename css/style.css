@@ -1702,3 +1702,33 @@ header {
     white-space: nowrap;
   }
 }
+
+
+.nav-bar ul li a {
+  font-size: 18px;
+  padding: 10px 16px;
+  color: #fff;
+  text-decoration: none;
+  text-shadow: 0 0 5px #44ff99;
+  transition: all 0.3s ease;
+}
+.nav-bar ul li a:hover,
+.nav-bar ul li a:focus {
+  background: #44ff99;
+  color: #000;
+  text-shadow: none;
+  border-radius: 8px;
+}
+
+
+/* Unified refined hover effect for PC and mobile navs */
+.nav-bar ul li a:hover,
+.nav-bar ul li a:focus,
+.mobile-scroll-fixed a:hover,
+.mobile-scroll-fixed a:focus,
+.mobile-scroll-fixed a:active {
+  background: rgba(68, 255, 153, 0.15);
+  color: #fff;
+  text-shadow: 0 0 5px #44ff99;
+  border-radius: 8px;
+}
