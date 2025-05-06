@@ -933,10 +933,6 @@ h1, p,
   display: none;
 }
 
-@media (max-width: 768px) {
-  .desktop-only {
-    display: none !important;
-  }
 
   .mobile-only {
     display: block !important;
@@ -1569,4 +1565,77 @@ header {
 }
 .tokenomics-section {
   margin-top: -80px !important;
+}
+
+@media (max-width: 1024px) {
+  .desktop-only {
+    display: none !important;
+  }
+  .mobile-only {
+    display: block !important;
+  }
+  .mobile-nav {
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+    background: rgba(0, 0, 0, 0.9);
+    padding: 20px;
+    z-index: 999;
+  }
+  .mobile-scroll {
+    display: flex;
+    gap: 30px;
+    -webkit-overflow-scrolling: touch;
+  }
+  .mobile-scroll a {
+    font-size: 50px;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 0 0 5px #44ff99;
+    white-space: nowrap;
+  }
+}
+
+
+@media (max-width: 1024px) {
+  .desktop-only {
+    display: none !important;
+  }
+  .mobile-only {
+    display: block !important;
+  }
+  .mobile-nav-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.95);
+    z-index: 9999;
+    padding: 20px;
+  }
+  .mobile-scroll-fixed {
+    display: flex;
+    overflow-x: auto;
+    gap: 30px;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+  }
+  .mobile-scroll-fixed a {
+    font-size: 50px;
+    color: white;
+    text-decoration: none;
+    text-shadow: 0 0 5px #44ff99;
+    white-space: nowrap;
+  }
+}
+
+
+/* Ensure mobile nav is hidden on PC by default */
+.mobile-nav-fixed {
+  display: none;
+}
+@media (max-width: 1024px) {
+  .mobile-nav-fixed {
+    display: block;
+  }
 }

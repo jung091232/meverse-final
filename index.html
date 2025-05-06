@@ -9,36 +9,46 @@
 <link href="https://unpkg.com/swiper/swiper-bundle.min.css" rel="stylesheet"/>
 </head>
 <body>
+
+<nav class="mobile-nav-fixed mobile-only">
+  <div class="mobile-scroll-fixed">
+    <a href="index.html">Home</a>
+    <a href="#about">About</a>
+    <a href="staking.html">Staking</a>
+    <a href="presale.html">Presale</a>
+    <a href="referral.html">Referral</a>
+    <a href="claim.html">Claim</a>
+    <a href="#community">Community</a>
+  </div>
+</nav>
+
+
+<!-- Fixed mobile nav structure (independent layer) -->
+
+
 <header>
+
+<div class="desktop-only">
+  <nav class="nav-bar">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#about">About Meverse</a></li>
+      <li><a href="staking.html">Staking</a></li>
+      <li><a href="presale.html">Presale</a></li>
+      <li><a href="referral.html">Referral</a></li>
+      <li><a href="claim.html">Claim</a></li>
+      <li><a href="#community">Community</a></li>
+    </ul>
+  </nav>
+</div>
+
 <!-- Desktop Nav -->
 <div class="desktop-only">
-<div class="desktop-only"><nav class="nav-bar">
-<ul>
-<li><a href="index.html">Home</a></li>
-<li><a href="#about">About Meverse</a></li>
-<li><a href="staking.html">Staking</a></li>
-<li><a href="presale.html">Presale</a></li>
-<li><a href="referral.html">Referral</a></li>
-<li><a href="claim.html">Claim</a></li>
-<li><a href="#community">Community</a></li>
-</ul>
-</nav></div>
+<div class="desktop-only"></div>
 </div>
 <!-- Mobile Swipe Nav -->
 <div class="mobile-only">
-<div class="mobile-only"><nav class="mobile-nav-wrapper">
-<div class="scrolling-menu">
-<ul>
-<li><a href="index.html">Home</a></li>
-<li><a href="#about">About Meverse</a></li>
-<li><a href="staking.html">Staking</a></li>
-<li><a href="presale.html">Presale</a></li>
-<li><a href="referral.html">Referral</a></li>
-<li><a href="claim.html">Claim</a></li>
-<li><a href="#community">Community</a></li>
-</ul>
-</div>
-</nav></div>
+<div class="mobile-only"></div>
 </div>
 </header>
 <div id="particles-js"></div>
