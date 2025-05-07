@@ -1,0 +1,85 @@
+<!-- Hero Section for Staking -->
+<section class="staking-hero-section">
+  <div class="staking-hero-container">
+    <!-- Character Image -->
+    <div class="hero-character">
+      <img src="images/yellow_memon_character.webp" alt="Memon character holding coin" />
+    </div>
+
+    <!-- Text and Action -->
+    <div class="hero-text-block">
+      <div class="speech-bubble">
+        <p>Start staking your MVS and earn up to <strong>120% APR</strong>!</p>
+      </div>
+      <button class="connect-wallet-btn">Connect Wallet</button>
+    </div>
+  </div>
+</section>
+
+<style>
+.staking-hero-section {
+  width: 100%;
+  padding: 100px 20px;
+  background: url('../images/bg-space-neon.webp') no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.staking-hero-container {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.hero-character img {
+  max-width: 320px;
+  height: auto;
+}
+
+.hero-text-block {
+  flex: 1;
+  min-width: 280px;
+}
+
+.speech-bubble {
+  background: rgba(0, 0, 0, 0.6);
+  color: #ffffff;
+  font-size: 1.5rem;
+  padding: 20px 30px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 12px #00ffcc88;
+}
+
+.connect-wallet-btn {
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 30px;
+  background: linear-gradient(90deg, #00ffcc, #0099ff);
+  color: #000;
+  cursor: pointer;
+  transition: 0.3s ease;
+  box-shadow: 0 0 10px #00ffcc66;
+}
+
+.connect-wallet-btn:hover {
+  box-shadow: 0 0 18px #00ffcc;
+}
+
+@media (max-width: 768px) {
+  .staking-hero-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .hero-character img {
+    max-width: 200px;
+  }
+}
+</style>
