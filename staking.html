@@ -75,6 +75,24 @@
     </li>
    </ul>
   </nav>
+  <section class="staking-hero" style="padding: 100px 20px 60px; display: flex; justify-content: center;">
+   <div style="display: flex; flex-direction: row; align-items: center; justify-content: center; max-width: 1200px; width: 100%; flex-wrap: wrap;">
+    <div class="hero-image" style="flex: 0 0 45%; text-align: center;">
+     <img alt="Memon Staking" src="images/memon_stake.webp" style="width: 100%; max-width: 420px;"/>
+    </div>
+    <div class="hero-text" style="flex: 0 0 45%; text-align: center;">
+     <h1 style="font-size: 64px; color: #00ffee; text-shadow: 0 0 12px #00ffee; margin: 0;">
+      Stake Your MVS
+     </h1>
+     <p style="font-size: 26px; color: #ffffff; margin: 20px 0;">
+      Earn passive income with every token you stake.
+     </p>
+     <button style="padding: 18px 40px; background: none; border: 2px solid #00ffee; color: #00ffee; font-size: 20px; border-radius: 12px; cursor: pointer; transition: all 0.3s;">
+      Connect Wallet
+     </button>
+    </div>
+   </div>
+  </section>
   <script src="https://cdn.jsdelivr.net/npm/particles.js">
   </script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js">
@@ -97,6 +115,139 @@
         480: { slidesPerView: 2 }
       }
     });
+  </script>
+  <script>
+   let selectedDuration = 30;
+  const aprMap = {30: 0.24, 90: 0.18, 180: 0.12};
+
+  function selectDuration(days) {
+    selectedDuration = days;
+    updateRewards();
+  }
+
+  function updateRewards() {
+    const amount = parseFloat(document.getElementById("stakeAmount").value) || 0;
+    const now = new Date();
+    const end = new Date(now.getTime() + selectedDuration * 24 * 60 * 60 * 1000);
+    const remainingDays = Math.ceil((end - now) / (1000 * 60 * 60 * 24));
+    
+    const bonusMultiplier = isWithinFirst60Days() ? 1.2 : 1.0;
+    const baseApr = aprMap[selectedDuration] || 0;
+    const reward = amount * baseApr * (selectedDuration / 365) * bonusMultiplier;
+
+    document.getElementById("estimatedRewards").textContent = reward.toFixed(2) + " MVS";
+    document.getElementById("remainingTime").textContent = remainingDays + " days";
+  }
+
+  function isWithinFirst60Days() {
+    const stakingStart = new Date("2025-05-09T00:00:00Z"); // replace with actual start date
+    const now = new Date();
+    const diffDays = (now - stakingStart) / (1000 * 60 * 60 * 24);
+    return diffDays <= 60;
+  }
+  </script>
+  <section class="staking-interface" style="padding: 100px 20px; display: flex; justify-content: center;">
+   <div style="background: rgba(0, 0, 0, 0.45); backdrop-filter: blur(14px); border-radius: 24px; padding: 60px; max-width: 880px; width: 100%; box-shadow: 0 0 25px #00ffee;">
+    <h2 style="color: #00ffee; text-align: center; font-size: 36px; margin-bottom: 40px;">
+     Stake Your MVS Tokens
+    </h2>
+    <p style="text-align: center; font-size: 16px; color: #ffcc00; margin-bottom: 30px;">
+     🚀 Special bonus rewards for all stakes made within the first 60 days of launch!
+    </p>
+    <div style="text-align: center; margin-bottom: 30px;">
+     <button onclick="selectDuration(30)" style="margin: 0 12px; padding: 12px 26px; border-radius: 10px; background: none; border: 2px solid #00ffee; color: #00ffee; cursor: pointer;">
+      30 Days
+     </button>
+     <button onclick="selectDuration(90)" style="margin: 0 12px; padding: 12px 26px; border-radius: 10px; background: none; border: 2px solid #00ffee; color: #00ffee; cursor: pointer;">
+      90 Days
+     </button>
+     <button onclick="selectDuration(180)" style="margin: 0 12px; padding: 12px 26px; border-radius: 10px; background: none; border: 2px solid #00ffee; color: #00ffee; cursor: pointer;">
+      180 Days
+     </button>
+    </div>
+    <div style="margin-bottom: 30px; text-align: center;">
+     <input id="stakeAmount" oninput="updateRewards()" placeholder="Enter amount to stake" style="width: 80%; padding: 14px; border-radius: 10px; border: none; font-size: 20px;" type="number"/>
+    </div>
+    <div style="margin-bottom: 30px; color: #ffffff; text-align: center; font-size: 18px;">
+     Estimated Rewards:
+     <span id="estimatedRewards" style="color: #00ffee;">
+      0 MVS
+     </span>
+     <br/>
+     Remaining Time:
+     <span id="remainingTime" style="color: #00ffee;">
+      -
+     </span>
+     <br/>
+     <span id="rewardNotice" style="color: #ff5555;">
+     </span>
+    </div>
+    <div style="display: flex; justify-content: space-around; flex-wrap: wrap; gap: 12px;">
+     <button style="flex: 1; min-width: 140px; padding: 14px 24px; background: none; border: 2px solid #00ffee; color: #00ffee; border-radius: 10px; cursor: pointer;">
+      Stake
+     </button>
+     <button style="flex: 1; min-width: 140px; padding: 14px 24px; background: none; border: 2px solid #00ffee; color: #00ffee; border-radius: 10px; cursor: pointer;">
+      Unstake
+     </button>
+     <button style="flex: 1; min-width: 140px; padding: 14px 24px; background: none; border: 2px solid #00ffee; color: #00ffee; border-radius: 10px; cursor: pointer;">
+      Claim Rewards
+     </button>
+    </div>
+    <p style="color: #999; text-align: center; margin-top: 30px; font-size: 14px;">
+     * Rewards will be distributed after TGE. No actual tokens are transferred now.
+    </p>
+   </div>
+  </section>
+  <script>
+   let selectedDuration = 30;
+  const aprMap = {30: 0.24, 90: 0.18, 180: 0.12};
+  const MAX_REWARDS = 1500000000;
+  let totalRewardDistributed = 0;
+
+  function selectDuration(days) {
+    selectedDuration = days;
+    updateRewards();
+  }
+
+  function updateRewards() {
+    const amount = parseFloat(document.getElementById("stakeAmount").value) || 0;
+    const now = new Date();
+    const end = new Date(now.getTime() + selectedDuration * 24 * 60 * 60 * 1000);
+    const remainingDays = Math.ceil((end - now) / (1000 * 60 * 60 * 24));
+    document.getElementById("remainingTime").textContent = remainingDays + " days";
+
+    const baseApr = aprMap[selectedDuration] || 0;
+    const aprMultiplier = getAprMultiplier();
+    const isBonus = isWithinFirst60Days();
+    const reward = amount * baseApr * (selectedDuration / 365) * aprMultiplier * (isBonus ? 1.2 : 1.0);
+
+    let finalReward = reward;
+    let notice = "";
+
+    if (totalRewardDistributed + reward > MAX_REWARDS) {
+      finalReward = 0;
+      notice = "⚠️ Reward pool exhausted. No rewards available.";
+    } else if (aprMultiplier < 1.0) {
+      notice = "⚠️ Reward reduced due to high participation.";
+    }
+
+    document.getElementById("estimatedRewards").textContent = finalReward.toFixed(2) + " MVS";
+    document.getElementById("rewardNotice").textContent = notice;
+  }
+
+  function getAprMultiplier() {
+    if (totalRewardDistributed < 750000000) return 1.0;
+    else if (totalRewardDistributed < 1300000000) return 0.8;
+    else if (totalRewardDistributed < MAX_REWARDS) return 0.5;
+    return 0;
+  }
+
+  function isWithinFirst60Days() {
+    const stakingStart = new Date("2025-05-09T00:00:00Z");
+    const now = new Date();
+    const diffDays = (now - stakingStart) / (1000 * 60 * 60 * 24);
+    return diffDays <= 60;
+  }
   </script>
  </body>
 </html>
