@@ -1,91 +1,102 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Staking - Meverse</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: url('images/bg-space-neon.webp') no-repeat center center fixed;
-      background-size: cover;
-      color: #fff;
-    }
-    .staking-hero-section {
-      width: 100%;
-      padding: 100px 20px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    .staking-hero-container {
-      max-width: 1200px;
-      width: 100%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 40px;
-      flex-wrap: wrap;
-    }
-    .hero-character img {
-      max-width: 320px;
-      height: auto;
-    }
-    .hero-text-block {
-      flex: 1;
-      min-width: 280px;
-    }
-    .speech-bubble {
-      background: rgba(0, 0, 0, 0.6);
-      color: #ffffff;
-      font-size: 1.5rem;
-      padding: 20px 30px;
-      border-radius: 20px;
-      margin-bottom: 20px;
-      box-shadow: 0 0 12px #00ffcc88;
-    }
-    .connect-wallet-btn {
-      padding: 15px 30px;
-      font-size: 1.2rem;
-      border: none;
-      border-radius: 30px;
-      background: linear-gradient(90deg, #00ffcc, #0099ff);
-      color: #000;
-      cursor: pointer;
-      transition: 0.3s ease;
-      box-shadow: 0 0 10px #00ffcc66;
-    }
-    .connect-wallet-btn:hover {
-      box-shadow: 0 0 18px #00ffcc;
-    }
-    @media (max-width: 768px) {
-      .staking-hero-container {
-        flex-direction: column;
-        text-align: center;
-      }
-      .hero-character img {
-        max-width: 200px;
-      }
-    }
-  </style>
-</head>
-<body>
-  <section class="staking-hero-section">
-    <div class="staking-hero-container">
-      <!-- Character Image -->
-      <div class="hero-character">
-        <img src="images/yellow_memon_character.webp" alt="Memon character holding coin" />
-      </div>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <title>
+   Staking
+  </title>
+  <link href="./css/style.css" rel="stylesheet"/>
+  <link href="https://unpkg.com/swiper/swiper-bundle.min.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <div id="particles-js">
+  </div>
+  <nav class="mobile-nav-fixed">
+   <div class="mobile-scroll-fixed">
+    <a href="index.html">
+     Home
+    </a>
+    <a href="#about">
+     About
+    </a>
+    <a href="staking.html">
+     Staking
+    </a>
+    <a href="presale.html">
+     Presale
+    </a>
+    <a href="referral.html">
+     Referral
+    </a>
+    <a href="claim.html">
+     Claim
+    </a>
+    <a href="#community">
+     Community
+    </a>
+   </div>
+  </nav>
+  <nav class="nav-bar">
+   <ul>
+    <li>
+     <a href="index.html">
+      Home
+     </a>
+    </li>
+    <li>
+     <a href="about.html">
+      About Meverse
+     </a>
+    </li>
+    <li>
+     <a href="staking.html">
+      Staking
+     </a>
+    </li>
+    <li>
+     <a href="presale.html">
+      Presale
+     </a>
+    </li>
+    <li>
+     <a href="referral.html">
+      Referral
+     </a>
+    </li>
+    <li>
+     <a href="claim.html">
+      Claim
+     </a>
+    </li>
+    <li>
+     <a href="#community">
+      Community
+     </a>
+    </li>
+   </ul>
+  </nav>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js">
+  </script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js">
+  </script>
+  <script>
+   particlesJS.load('particles-js', './config/particles.json', function() {
+      console.log('particles.js loaded');
+    });
 
-      <!-- Text and Action -->
-      <div class="hero-text-block">
-        <div class="speech-bubble">
-          <p>Start staking your MVS and earn up to <strong>120% APR</strong>!</p>
-        </div>
-        <button class="connect-wallet-btn">Connect Wallet</button>
-      </div>
-    </div>
-  </section>
-</body>
+    var swiper = new Swiper('.mySwiper', {
+      slidesPerView: 4,
+      spaceBetween: 30,
+      loop: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      breakpoints: {
+        768: { slidesPerView: 4 },
+        480: { slidesPerView: 2 }
+      }
+    });
+  </script>
+ </body>
 </html>
