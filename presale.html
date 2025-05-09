@@ -489,9 +489,6 @@ section {
   margin-bottom: 40px;
   color: #ffffff;
 }
-.faq-list {
-  text-align: left;
-}
 .faq-question {
   width: 100%;
   background: rgba(0,255,255,0.05);
@@ -503,10 +500,17 @@ section {
   text-align: left;
   cursor: pointer;
   margin-bottom: 10px;
-  transition: background 0.2s;
+  position: relative;
 }
-.faq-question:hover {
-  background: rgba(0,255,255,0.08);
+.faq-question .arrow {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: transform 0.3s ease;
+}
+.faq-question.active .arrow {
+  transform: translateY(-50%) rotate(180deg);
 }
 .faq-answer {
   display: none;
@@ -515,7 +519,91 @@ section {
   color: #ffffffcc;
 }
 </style>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const faqQuestions = document.querySelectorAll(".faq-question");
+  faqQuestions.forEach(function(question) {
+    question.addEventListener("click", function() {
+      const answer = question.nextElementSibling;
+      const isVisible = answer.style.display === "block";
+      document.querySelectorAll(".faq-answer").forEach(a => a.style.display = "none");
+      document.querySelectorAll(".faq-question").forEach(q => q.classList.remove("active"));
+      if (!isVisible) {
+        answer.style.display = "block";
+        question.classList.add("active");
+      }
+    });
+  });
+});
+</script>
 
+
+<style>
+.referral-cta {
+  background: rgba(0, 255, 255, 0.05);
+  padding: 80px 20px;
+  border-radius: 20px;
+  max-width: 960px;
+  margin: 60px auto;
+  box-shadow: 0 0 24px rgba(0,255,255,0.12);
+}
+.referral-cta h2 {
+  font-size: 36px;
+  color: #00ffee;
+  margin-bottom: 20px;
+}
+.referral-cta p {
+  font-size: 18px;
+  color: #ffffffcc;
+  margin-bottom: 10px;
+}
+.referral-button {
+  display: inline-block;
+  margin-top: 24px;
+  padding: 14px 32px;
+  font-size: 18px;
+  background: linear-gradient(90deg, #00ffaa, #00ccff);
+  color: #000;
+  text-decoration: none;
+  border-radius: 40px;
+  box-shadow: 0 0 12px #00ffaa;
+  animation: referral-glow 1.8s ease-in-out infinite;
+  transition: transform 0.3s;
+}
+.referral-button:hover {
+  transform: scale(1.05);
+}
+@keyframes referral-glow {
+  0% { box-shadow: 0 0 10px #00ffaa; }
+  50% { box-shadow: 0 0 25px #00ffaa; }
+  100% { box-shadow: 0 0 10px #00ffaa; }
+}
+</style>
+
+
+<style>
+@media (max-width: 768px) {
+  .referral-cta {
+    padding: 60px 16px;
+  }
+  .referral-cta h2 {
+    font-size: 28px;
+  }
+  .referral-cta p {
+    font-size: 16px;
+  }
+  .referral-button {
+    font-size: 16px;
+    padding: 12px 24px;
+    width: 100%;
+  }
+}
+.referral-button {
+  position: relative;
+  z-index: 10;
+  cursor: pointer;
+}
+</style>
 
 </head>
 <body>
@@ -661,36 +749,34 @@ section {
     </div>
   </div>
 </section>
-
 <!-- FAQ Section -->
 <section class="faq-section">
   <div class="container text-center">
     <h2>Frequently Asked Questions</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <button class="faq-question">📅 When does the presale end?</button>
+        <button type="button" class="faq-question">📅 When does the presale end?<span class="arrow">▼</span></button>
         <div class="faq-answer">Join early to secure better rates. The presale will conclude once allocations are fulfilled.</div>
       </div>
       <div class="faq-item">
-        <button class="faq-question">🔐 Is there a vesting period?</button>
+        <button type="button" class="faq-question">🔐 Is there a vesting period?<span class="arrow">▼</span></button>
         <div class="faq-answer">Yes, your tokens can be claimed after the Token Generation Event (TGE).</div>
       </div>
       <div class="faq-item">
-        <button class="faq-question">💳 What payment methods are accepted?</button>
+        <button type="button" class="faq-question">💳 What payment methods are accepted?<span class="arrow">▼</span></button>
         <div class="faq-answer">You can participate using USDT, BNB, or ETH.</div>
       </div>
       <div class="faq-item">
-        <button class="faq-question">🔁 Can I participate multiple times?</button>
+        <button type="button" class="faq-question">🔁 Can I participate multiple times?<span class="arrow">▼</span></button>
         <div class="faq-answer">Yes, you can purchase across different rounds within your allocation limits.</div>
       </div>
       <div class="faq-item">
-        <button class="faq-question">❓ How can I claim my tokens?</button>
+        <button type="button" class="faq-question">❓ How can I claim my tokens?<span class="arrow">▼</span></button>
         <div class="faq-answer">After TGE, simply connect your wallet on the claim page to receive your tokens.</div>
       </div>
     </div>
   </div>
 </section>
-
 
 
 
@@ -711,19 +797,15 @@ section {
     });
   </script>
 
-<script>
-window.addEventListener('load', function() {
-  const questions = document.querySelectorAll('.faq-question');
-  questions.forEach(q => {
-    q.addEventListener('click', () => {
-      const answer = q.nextElementSibling;
-      const isOpen = answer.style.display === 'block';
-      document.querySelectorAll('.faq-answer').forEach(a => a.style.display = 'none');
-      answer.style.display = isOpen ? 'none' : 'block';
-    });
-  });
-});
-</script>
+<!-- Referral CTA Section -->
+<section class="referral-cta">
+  <div class="container text-center">
+    <h2>💸 Invite & Earn Big Rewards</h2>
+    <p>There’s a powerful referral system waiting for you — with up to <strong>$500,000</strong> in rewards.</p>
+    <p>Share your link, grow the community, and get rewarded in MVS. The more you refer, the more you earn.</p>
+    <a href="referral.html" class="referral-button">🚀 Go to Referral Page</a>
+  </div>
+</section>
 
 </body>
 </html>
