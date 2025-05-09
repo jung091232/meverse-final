@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Meverse | Universe</title>
+<link href="./css/style.css" rel="stylesheet"/>
+<script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+<link href="https://unpkg.com/swiper/swiper-bundle.min.css" rel="stylesheet"/>
+
+<style>
+.presale-hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 180px 20px 80px;
+  text-align: center;
+}
+.hero-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.hero-left img {
+  max-width: 300px;
+  height: auto;
+}
+.glow-title {
+  font-size: 60px;
+  color: #00ffee;
+  text-shadow: 0 0 10px #00ffee, 0 0 20px #00ffaa;
+}
+.hero-description {
+  font-size: 20px;
+  margin-top: 10px;
+  color: #ffffffcc;
+}
+.hero-buttons {
+  margin-top: 20px;
+}
+.btn-primary, .btn-secondary {
+  padding: 12px 28px;
+  margin: 10px;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.btn-primary {
+  background: #00ffaa;
+  color: #000;
+}
+.btn-secondary {
+  background: transparent;
+  border: 2px solid #00ffaa;
+  color: #00ffaa;
+}
+</style>
+
+
+<style>
+@keyframes pulse {
+  0% { transform: scale(1); box-shadow: 0 0 0px #00ffaa; }
+  50% { transform: scale(1.1); box-shadow: 0 0 20px #00ffaa; }
+  100% { transform: scale(1); box-shadow: 0 0 0px #00ffaa; }
+}
+.animated-wallet-button {
+  font-size: 20px;
+  padding: 16px 36px;
+  animation: pulse 1.5s infinite;
+}
+</style>
+
+
+<style>
+.presale-timeline {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 80px 20px;
+  border-radius: 20px;
+  text-align: center;
+  color: #00ffee;
+  box-shadow: 0 0 20px rgba(0,255,255,0.2);
+  margin-top: 40px;
+}
+.presale-timeline h2 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+.presale-timeline .price {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+.round-status p {
+  margin: 5px 0;
+}
+.progress-bar {
+  width: 100%;
+  height: 10px;
+  background: #222;
+  border-radius: 10px;
+  margin: 20px 0;
+  overflow: hidden;
+}
+.progress {
+  height: 100%;
+  background: linear-gradient(90deg, #00ffaa, #00ccff);
+}
+.countdown {
+  font-size: 18px;
+  margin-top: 20px;
+}
+.next-round-note {
+  margin-top: 10px;
+  color: #88ffff;
+}
+</style>
+
+
+<style>
+#particles-js {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+body {
+  background-color: #000000;
+  color: white;
+  position: relative;
+  z-index: 1;
+}
+</style>
+
+
+<style>
+section {
+  background: transparent !important;
+}
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.progress-bar {
+  max-width: 600px;
+  margin: 20px auto;
+}
+</style>
+
+</head>
+<body>
+  <!-- particles.js container -->
+  <div id="particles-js"></div>
+
+  <!-- Full Header with Navigation -->
+  <header>
+<div class="desktop-only">
+<nav class="nav-bar">
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About Meverse</a></li>
+<li><a href="staking.html">Staking</a></li>
+<li><a href="presale.html">Presale</a></li>
+<li><a href="referral.html">Referral</a></li>
+<li><a href="claim.html">Claim</a></li>
+<li><a href="#community">Community</a></li>
+</ul>
+</nav>
+</div>
+<!-- Desktop Nav -->
+<div class="desktop-only">
+<div class="desktop-only"></div>
+</div>
+<!-- Mobile Swipe Nav -->
+<div class="mobile-only">
+<div class="mobile-only"></div>
+</div>
+</header>
+
+  
+<!-- Hero Section -->
+<section class="presale-hero">
+  <div class="container hero-flex">
+    <div class="hero-left">
+      <img src="images/memon-presale.png" alt="Memon character" class="hero-image"/>
+    </div>
+    <div class="hero-right">
+      <h1 class="glow-title">PRESALE IS LIVE</h1>
+      <p class="hero-description">Grab your $MVS tokens before they run out. Limited time only.</p>
+      <div class="hero-buttons">
+        <a href="#" class="btn-primary animated-wallet-button">Connect Wallet</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Presale Timeline Section -->
+<section class="presale-timeline">
+  <div class="container text-center">
+    <h2>Presale Round 3</h2>
+    <p class="price">Current Price: <strong>$0.0030</strong> per MVS</p>
+
+    <div class="round-status">
+      <p>Total Sold: <strong>320,000,000</strong> / 2,000,000,000 MVS</p>
+      <p>This Round: <strong>20,000,000</strong> / 100,000,000 MVS</p>
+    </div>
+
+    <div class="progress-bar">
+      <div class="progress" style="width: 20%"></div>
+    </div>
+
+    <p class="countdown">⏳ Time left: 5d 12h 30m</p>
+    <p class="next-round-note">Next round begins automatically when target is reached.</p>
+  </div>
+</section>
+
+<!-- Scripts -->
+  <script src="js/particles.min.js"></script>
+  <script>
+    particlesJS.load('particles-js', 'config/particles.json', function() {
+      console.log('particles.js config loaded for presale page.');
+    });
+  </script>
+</body>
+</html>
